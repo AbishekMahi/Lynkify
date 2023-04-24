@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Primary Meta Tags -->
+    <title>Lynkify</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name=”robots” content="index, follow">
+    <meta name="googlebot" content="index">
+    <meta name="theme-color" content="#ca2020">
+
+    <!-- CSS here -->
+    <!-- <link rel="stylesheet" href="assets/css/preloader.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css"> -->
+    <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
+    <!-- <link rel="stylesheet" href="assets/css/elegantFont.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/imagetooltip.min.css"> -->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body,
+        html {
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        span {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        .bg-image {
+            background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/02/c2/00/02c2003d-2bf8-32f1-ca21-9e67a2f92560/cover.jpg/1200x1200bf-60.jpg");
+            filter: blur(20px);
+            -webkit-filter: blur(20px);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .logo {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            z-index: 3;
+        }
+
+        .logo a {
+            color: #fff !important;
+            /* font-size: larger; */
+        }
+
+        .content {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.65);
+            color: white !important;
+            height: 100vh;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* transform: translate(-50%, -50%); */
+            z-index: 2;
+            width: 100%;
+        }
+
+        .main-img {
+            width: 75%;
+        }
+
+        .main-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            border: 1px solid #e7e6ef;
+            border-radius: 200px;
+            padding: 12px 30px;
+            background: #3c3b3e74;
+            margin-bottom: 15px;
+        }
+
+        .icons {
+            width: 25px;
+        }
+
+        .main-btn span {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .right {
+            max-height: 70vh;
+            overflow-y: visible;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .main-footer {
+            position: fixed;
+            width: 100%;
+            bottom: .7rem;
+            /* z-index: 3; */
+        }
+
+        .main-footer hr {
+            opacity: 10% !important;
+        }
+
+        .main-footer p {
+            color: #fff;
+            font-size: medium;
+            text-align: center;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 425px) {
+
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                text-align: center;
+            }
+
+            hr {
+                color: #fff;
+            }
+
+            body,
+            html {
+                height: 100%;
+                margin: 0;
+                background-color: black;
+            }
+
+            .bg-image {
+                height: 100%;
+            }
+
+            .content {
+                background-image: linear-gradient(to bottom, #6C0B62, #1A1A1A);
+                height: 100%;
+                position: relative;
+            }
+
+            .main-img {
+                width: 90%;
+                margin-top: 1.5rem;
+            }
+
+            .right {
+                max-height: max-content;
+            }
+
+            .main-btn {
+                width: 100%;
+            }
+
+            .main-footer {
+                position: relative;
+                padding-bottom: .7rem !important;
+            }
+
+            .main-footer p {
+                color: #fff;
+                font-size: medium;
+                text-align: center;
+                margin: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo"><a href=""><i class="fab fa-3x fa-linkedin"></i></a></div>
+    <main>
+        <div class="bg-image"></div>
+
+        <div class="content">
+            <div class="d-flex align-items-center" style="height: 100%;">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-5 col-md-5 col-sm-12 left">
+                            <div class="text-center">
+                                <img class="main-img mb-10" src="image.jpg" alt="">
+                                <h2 class="text-light">Dhooram Pogindrai</h2>
+                                <h5 class="text-light">Abishek Mahi, Sibi Chakravarthi</h5>
+                            </div>
+                        </div>
+                        <!-- <hr> -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 ">
+
+                            <h3 class="text-light mb-15">Stream this album on :</h3>
+                            <div class="right">
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-spotify fa-2x mr-20 icons"></i>
+                                        <span>Spotify</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-itunes-note fa-2x mr-20 icons"></i>
+                                        <span>Apple Music</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-deezer fa-2x mr-20 icons"></i>
+                                        <span>Deezer</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-amazon fa-2x mr-20 icons"></i>
+                                        <span>Amazon Music</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-soundcloud fa-2x mr-20 icons"></i>
+                                        <span>SoundCloud</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-napster fa-2x mr-20 icons"></i>
+                                        <span>Napster</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-spotify fa-2x mr-20 icons"></i>
+                                        <span>Spotify</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-soundcloud fa-2x mr-20 icons"></i>
+                                        <span>SoundCloud</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-napster fa-2x mr-20 icons"></i>
+                                        <span>Napster</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                                <a class="main-btn" href="http://">
+                                    <div class="d-flex align-items-center"><i
+                                            class="fab fa-spotify fa-2x mr-20 icons"></i>
+                                        <span>Spotify</span> </div><i class="far fa-2x fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <hr>
+                <p>Made with <a href="#">Lynkify</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
