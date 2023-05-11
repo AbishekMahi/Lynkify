@@ -4,7 +4,7 @@ body,
 html {
     height: 100vh;
     margin: 0;
-    background-color: black;
+    background-color: black !important;
 }
 
 * {
@@ -53,7 +53,7 @@ h3 {
     z-index: 3;
 }
 
-.logo a {
+.logo h2 {
     color: #fff !important;
     /* font-size: larger; */
 }
@@ -128,6 +128,9 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
 
     p,
     h1,
