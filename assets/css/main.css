@@ -57,7 +57,7 @@ h3 {
 }
 
 .mainbanner {
-    background-image: url("/main.png");
+    background-image: url("https://abishekmahi.github.io/Lynkify/main.png");
     /* filter: blur(20px);
     -webkit-filter: blur(20px); */
     height: 100vh;
