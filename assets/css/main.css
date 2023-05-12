@@ -11,6 +11,16 @@ html {
     box-sizing: border-box;
 }
 
+.footer__subscribe-input input {
+    /* width: 300px !important; */
+    padding: 0 20px !important;
+    padding-right: 55px !important;
+}
+
+.lottie {
+    width: 150px;
+}
+
 a,
 p,
 h1,
@@ -46,10 +56,27 @@ h3 {
     background-size: cover;
 }
 
+.mainbanner {
+    background-image: url("/main.png");
+    /* filter: blur(20px);
+    -webkit-filter: blur(20px); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
 .logo {
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    top: 35px;
     left: 40px;
+    z-index: 3;
+}
+.make {
+    position: fixed;
+    top: 35px;
+    right: 40px !important;
     z-index: 3;
 }
 
@@ -76,21 +103,25 @@ h3 {
     width: 75%;
 }
 
-.main-btn {
+.main-btn,
+.right a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    font-size: 18px;
+    font-weight: 500;
     border: 1px solid #e7e6ef;
-    border-radius: 200px;
-    padding: 12px 30px;
-    background: #3c3b3e74;
+    border-radius: 6px;
+    padding: 12px 20px;
+    background: #3c3b3e74 !important;
     margin-bottom: 15px;
 }
 
-.main-btn:hover {
+.main-btn,
+.right a:hover {
     width: 91%;
-    background: #9c99a474;
+    background: #9c99a474 !important;
 }
 
 .icons {
@@ -111,13 +142,15 @@ h3 {
 
 .main-footer {
     position: fixed;
+    backdrop-filter: blur(10px);
     width: 100%;
     bottom: .7rem;
-    /* z-index: 3; */
+    z-index: 2;
 }
 
 .main-footer hr {
-    opacity: 10% !important;
+    margin-top: 0 !important;
+    opacity: 30% !important;
 }
 
 .main-footer p {
@@ -127,8 +160,32 @@ h3 {
     margin: 0;
 }
 
+.far {
+    font-size: 22px;
+}
+
+.vid-cont {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.video {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+
 @media only screen and (max-width: 600px) {
-    .logo {
+    #song-info .logo {
         display: none;
     }
 
@@ -163,7 +220,7 @@ h3 {
     }
 
     .content {
-        background-image: linear-gradient(to bottom, #6C0B62, #1A1A1A);
+        background-image: linear-gradient(to bottom, #2f2f2f, #1A1A1A);
         height: 100%;
         position: relative;
     }
@@ -178,12 +235,14 @@ h3 {
         align-items: center;
     }
 
-    .main-btn {
+    .main-btn,
+    .right a {
         width: 100%;
     }
 
-    .main-btn:hover {
-        width: 100%;
+    .main-btn,
+    .right a:hover {
+        width: 100% !important;
     }
 
     .main-footer {
@@ -196,6 +255,19 @@ h3 {
         font-size: medium;
         text-align: center;
         margin: 0;
+    }
+
+    .far {
+        font-size: 20px;
+    }
+
+    .vid-cont {
+        margin-bottom: 80px;
+    }
+
+    .video {
+        width: 100%;
+        height: 100%;
     }
 
 }
